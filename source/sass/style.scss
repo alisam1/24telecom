@@ -1,0 +1,59 @@
+@import "variables.scss";
+@import "blocks/normalize.scss";
+@import "blocks/container.scss";
+@import "blocks/white.scss";
+@import "blocks/header.scss";
+@import "blocks/main_slider.scss";
+@import "blocks/slick.scss";
+@import "blocks/slick-theme.scss";
+@import "blocks/lose.scss";
+@import "blocks/decide.scss";
+@import "blocks/scope.scss";
+@import "blocks/test.scss";
+@import "blocks/work.scss";
+@import "blocks/monitoring.scss";
+@import "blocks/example.scss";
+@import "blocks/magnific.scss";
+@import "blocks/order.scss";
+@import "blocks/footer.scss";
+
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato/latoregular.woff") format('woff'),
+         url("../fonts/lato/latoregular.woff2") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/lato/latolight.woff") format('woff'),
+       url("../fonts/lato/latolight.woff2") format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Medium";
+  src: url("../fonts/lato/latomedium.woff") format('woff'),
+       url("../fonts/lato/latomedium.woff2") format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: "Lato-Bold";
+    src: url("../fonts/lato/latobold.woff") format('woff'),
+         url("../fonts/lato/latobold.woff2") format('woff2');
+      font-weight: 700;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Lato-Black";
+    src: url("../fonts/lato/latoblack.woff") format('woff'),
+         url("../fonts/lato/latoblack.woff2") format('woff2');
+      font-weight: 800;
+      font-style: normal;
+  }

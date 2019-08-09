@@ -1,0 +1,43 @@
+.scope__area 
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+padding-bottom: 80px;
+}
+
+.scope__title
+{
+    font-family: $font-family-light;
+    font-size: 25px;
+    color: #08395b;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.scope__card
+{
+    width: 245px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.scope__icon
+{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.scope__text
+{   
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444b51;
+    position: relative;
+    display: flex;
+    align-items: center;
+}

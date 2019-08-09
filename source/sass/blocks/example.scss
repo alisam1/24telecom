@@ -1,0 +1,100 @@
+.examples__title
+{
+    font-family: $font-family-light;
+    font-size: 25px;
+    line-height: 35px;
+    color: #08395b;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.examples__block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+.examples__img:hover .hover{
+    width: 270px;
+    height: 200px;
+    display: block;
+    border-radius: 10px;
+    background-image: linear-gradient( 90deg, rgb(245,123,32) 0%, rgb(241,87,34) 100%);
+    cursor: pointer;
+    position: relative;
+    margin-top: -204px;
+    text-decoration: none;
+}
+
+.examples__img img
+{
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+}
+.example__button
+{
+  width: 155px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: inherit;
+  border: 1px solid #f15722;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: $font-family;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hover
+{
+    display: none;
+}
+
+.hover__info
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hover__title
+{
+    font-family: $font-family-bold;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hover__text
+{
+    width: 155px;
+    margin: 0 auto;
+    font-family: $font-family;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hover__info
+{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.hover__info img 
+{
+    width: 27px;
+    height: 27px;
+    text-align: center;
+}
+
