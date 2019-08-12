@@ -39,10 +39,28 @@
     line-height: 25px;
     color: #444b51;
     margin-bottom: 10px;
-    margin-left: -10px;
+    margin-left: 0px;
 }
 
-.num{
+.lose__list {
+    list-style-type: none; 
+    counter-reset: num;
+    margin: 0 0 0 45px;
+    padding: 15px 0 5px 0;
+    font-size: 16px;
+}
+.lose__list  li {
+    position: relative;    
+    margin: 0 0 0 0;
+    padding: 0 0 10px 0;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.lose__list  li:before {
+    content: counter(num); 
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
     font-family: $font-family;
     font-size: 16px;
     line-height: 32px;
@@ -51,14 +69,99 @@
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    margin: 5px 10px;
-    margin-right: 35px;
     width: 35px;
     height: 35px;
-  }
+    top: -7px;
+    left: -48px;
+}
 
 .lose__img
 {
     width: 50%;
     max-width: 100%;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .lose
+    {
+        flex-direction: column;
+    }
+
+    .lose__title
+    {
+        text-align: center;
+    }
+
+    .lose__info
+    {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+
+
+    .lose
+    {
+        flex-direction: column-reverse;
+    }
+
+    .lose__img
+    {
+        width: 100%;
+    }
+
+    .lose__img img
+    {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .lose__info {
+
+        width: 80%;
+        margin: 0 auto;
+    
+    }
+
+    .lose__title
+    {
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .lose__item
+    {
+        width:100%;
+        max-width: 280px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        float: left;
+        display: flex;
+        align-items: center;
+    }
+    .lose__list  li:before {
+        content: counter(num); 
+        counter-increment: num;
+        display: inline-block;
+        position: absolute;
+        font-family: $font-family;
+        font-size: 16px;
+        line-height: 32px;
+        color: white;
+        background: #f57b20;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        top: auto;
+        left: -48px;
+    }
+  
+  }

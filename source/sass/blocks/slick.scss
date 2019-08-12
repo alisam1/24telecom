@@ -20,7 +20,7 @@
     display: block;
     margin: 0;
     padding: 0;
-    padding-left: 5px;
+    padding-left: 0px;
     margin: 0;
 
     &:focus {
@@ -74,7 +74,7 @@
     text-align: center;
     display: inline-block;
     min-height: 1px;
-    padding: 0 15px;
+    padding: 0 0px;
     [dir="rtl"] & {
         float: right;
     }
@@ -122,6 +122,27 @@
     display: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .slick-slide img
+    {
+      display: none;
+    }
+    
+    }
+    
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+        .slick-slide img
+        {
+          display: none;
+        }
+    
+        .examples .slick-slide img
+      {
+        display: block;
+      }
+      
+      }
 
 
 @media screen and (max-width: 768px){

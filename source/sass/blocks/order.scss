@@ -103,3 +103,148 @@
     padding-right: 0;
     margin-top: 45px;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .order
+    {
+        flex-direction: column;
+    }
+
+    .order__left
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .order__left .form
+    {
+        width: auto;
+    }
+
+    .order__left .form__title
+    {
+        text-align: center;
+    }
+
+    .order__left .form form 
+     
+    {
+        margin: 0 auto;
+    }
+
+    
+    .order__left .form input[type="submit"]
+     
+    {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .order__right
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .order__right .form
+    {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .order__right .form__title
+    {
+        text-align: center;
+    }
+
+    .order__right .form form 
+     
+    {
+        margin: 0 auto;
+    }
+
+    
+    .order__right .form input[type="submit"]
+     
+    {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+
+
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+
+    
+    .order
+    {
+        flex-direction: column;
+    }
+
+    .order__left
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .order__left .form
+    {
+        width: auto;
+    }
+
+    .order__left .form__title
+    {
+        text-align: center;
+    }
+
+    .order__left .form form 
+     
+    {
+        margin: 0 auto;
+    }
+
+    
+    .order__left .form input[type="submit"]
+     
+    {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .order__right
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .order__right .form
+    {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .order__right .form__title
+    {
+        text-align: center;
+    }
+
+    .order__right .form form 
+     
+    {
+        margin: 0 auto;
+    }
+
+    
+    .order__right .form input[type="submit"]
+     
+    {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+  
+  }

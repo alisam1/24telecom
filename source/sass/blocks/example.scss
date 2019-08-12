@@ -98,3 +98,46 @@
     text-align: center;
 }
 
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .examples__block
+    {
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .examples__img
+    {
+        margin-bottom: 20px;
+    }
+
+
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+
+      .examples__block
+    {
+        flex-wrap: wrap;
+        display: block;
+    }
+
+    .examples__img img {
+
+        width: 270px;
+        height: 200px;
+        border-radius: 10px;
+        margin: 0 auto;
+    
+    }
+
+    .examples .slick-dots
+    {
+        display: none;
+    }
+
+  
+  }

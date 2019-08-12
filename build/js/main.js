@@ -12,6 +12,20 @@ $(document).ready(function ($) {
     });
     });
 
+    
+/*Mobile menu*/
+
+document.querySelector('.open-menu').addEventListener('click', () => {
+  document.querySelector('.menu_mobile').classList.add('active');
+  document.querySelector('.close-menu').classList.add('close-menu-active');
+})
+
+document.querySelector('.close-menu').addEventListener('click', () => {
+  document.querySelector('.menu_mobile').classList.remove('active');
+  document.querySelector('.close-menu').classList.remove('close-menu-active')
+})
+
+
     /* Gallery */
 
 $(document).ready(function() {
@@ -26,3 +40,27 @@ $(document).ready(function() {
 		},
 	});
 });
+
+    /* Responsive slider */
+
+    $('.examples__block').slick({
+      dots: true,
+      arrows: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 6000,
+          settings: "unslick"
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });

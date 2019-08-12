@@ -178,3 +178,50 @@
     margin-top: 5px;
     cursor: pointer;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .monitoring__blocks
+    {
+        flex-direction: column;
+    }
+
+    .block-little {
+        width: 310px;
+        margin: 0 auto;
+            margin-bottom: 0px;
+        margin-bottom: 20px;
+    }
+
+    .block-big {
+        width: 565px;
+        margin: 0 auto;
+    }
+
+
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+  
+ 
+    .monitoring__blocks
+    {
+        flex-direction: column;
+    }
+
+    .block-little {
+        width: 100%;
+        max-width: 310px;
+        margin: 0 auto;
+            margin-bottom: 0px;
+        margin-bottom: 20px;
+    }
+
+    .block-big {
+        width: 100%;
+        max-width: 565px;
+        margin: 0 auto;
+    }
+
+  }

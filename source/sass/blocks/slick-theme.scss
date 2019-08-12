@@ -52,12 +52,12 @@ $slick-opacity-not-active: 0 !default;
     .slick-next {
         position: absolute;
         display: block;
-        height: 21px;
-        width: 22px;
+        height: 18px;
+        width: 12px;
         line-height: 0px;
         font-size: 0px;
         cursor: pointer;
-        background-image: url("../img/right_arrow.png");
+        background-image: url("../img/right_mobile.svg");
         top: 50%;
         -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
@@ -65,9 +65,10 @@ $slick-opacity-not-active: 0 !default;
         padding: 0;
         border: none;
         outline: none;
+        background-color: inherit;
         &:hover, &:focus {
             outline: none;
-            background-image: url("../img/right_arrow.png");
+            background-image: url("../img/right_mobile.svg");
             &:before {
                 opacity: $slick-opacity-on-hover;
             }
@@ -127,12 +128,12 @@ $slick-opacity-not-active: 0 !default;
 .slick-prev {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 12px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
-    background-image: url("../img/left_arrow.png");
+    background-image: url("../img/left_mobile.svg");
     top: 50%;
     background-color: inherit;
     -webkit-transform: translate(0, -50%);
@@ -143,7 +144,7 @@ $slick-opacity-not-active: 0 !default;
     outline: none;
     &:hover, &:focus {
         outline: none;
-        background-image: url("../img/left_arrow.png");
+        background-image: url("../img/left_mobile.svg");
         &:before {
             opacity: $slick-opacity-on-hover;
         }
@@ -163,7 +164,7 @@ $slick-opacity-not-active: 0 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    left: 15px;
     [dir="rtl"] & {
         left: auto;
         right: -25px;
@@ -229,7 +230,7 @@ $slick-opacity-not-active: 0 !default;
 
 
 .slick-next {
-    right: -25px;
+    right: 15px;
     [dir="rtl"] & {
         left: -25px;
         right: auto;
@@ -256,11 +257,6 @@ $slick-opacity-not-active: 0 !default;
 
 .slick-dotted.slick-slider {
     margin-bottom: 30px;
-}
-
-.event__bottom .slick-dots
-{
-    display: none;
 }
 
 .slick-dots {
@@ -326,6 +322,17 @@ $slick-opacity-not-active: 0 !default;
 
 .slick-dots li.slick-active button {
     background-color: #00d8e4;
+}
+
+
+.event__bottom .slick-dots
+{
+    display: none;
+}
+
+.examples__block .slick-dots
+{
+    display: none;
 }
 
 .main__slider .slick-dots li.slick-active button {
@@ -419,7 +426,7 @@ $slick-opacity-not-active: 0 !default;
         text-align: center;
         padding: 0;
         margin: 0;
-        max-width: 320px;
+        max-width: 200px;
         justify-content:center;
         margin: 0 auto;
     }
@@ -427,12 +434,12 @@ $slick-opacity-not-active: 0 !default;
 .main__slider .slick-next {
     position: absolute;
     display: block;
-    height: 21px;
-    width: 21px;
+    height: 34px;
+    width: 20px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
-    background-image: url("../img/white_next.png");
+    background-image: url("../img/left_arrow.svg");
     background-color: inherit;
     top: 38%;
     -webkit-transform: translate(0, -50%);
@@ -444,7 +451,7 @@ $slick-opacity-not-active: 0 !default;
     z-index: 1;
     &:hover, &:focus {
         outline: none;
-        background-image: url("../img/white_next.png");
+        background-image: url("../img/left_arrow.svg");
         &:before {
             opacity: $slick-opacity-on-hover;
         }
@@ -467,12 +474,12 @@ $slick-opacity-not-active: 0 !default;
 .main__slider .slick-prev {
     position: absolute;
     display: block;
-    height: 21px;
-    width: 22px;
+    height: 34px;
+    width: 20px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
-    background-image: url("../img/prev_arrow.png");
+    background-image: url("../img/right_arrow.svg");
     background-color: inherit;
     top: 38%;
     -webkit-transform: translate(0, -50%);
@@ -484,7 +491,7 @@ $slick-opacity-not-active: 0 !default;
     z-index: 1;
     &:hover, &:focus {
         outline: none;
-        background-image: url("../img/prev_arrow.png");
+        background-image: url("../img/right_arrow.svg");
         &:before {
             opacity: $slick-opacity-on-hover;
         }
@@ -505,7 +512,17 @@ $slick-opacity-not-active: 0 !default;
 
 .event__bottom .slick-dots
 {
-    display: block;
+    display: none;
+}
+
+.examples__block .slick-dots
+{
+    display: none;
+}
+
+.examples .slick-dots
+{
+    display: none;
 }
 
 }

@@ -41,3 +41,33 @@ padding-bottom: 80px;
     display: flex;
     align-items: center;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+.scope__area
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+
+    .scope__card {
+        width: 80%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-bottom: 25px;
+        margin: 0 auto;
+            margin-bottom: 0px;
+        margin-bottom: 20px;
+    }
+
+  
+  }

@@ -1,3 +1,14 @@
+.header-desktop
+{
+    display: flex;
+    width: 100%;
+}
+
+.header-mobile
+{
+    display: none;
+}
+
 .main-header
 {
     width: 100%;
@@ -6,7 +17,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .main-header__logo img 
@@ -45,6 +55,11 @@
     font-size: 14px;
     color: #fff;
     text-decoration: none;
+}
+
+.main-info
+{
+    display: flex;
 }
 
 .main-phone a 
@@ -149,3 +164,174 @@
 {
     margin-top: 5px;
 }
+
+
+
+@media screen and (min-width: 1280px) and (max-width:  1440px) {
+
+    .header-desktop
+    {
+        display: flex;
+        width: 100%;
+    }
+    
+    .header-mobile
+    {
+        display: none;
+    }
+
+
+    .main-header__logo img
+    {
+        width: 105px;
+        padding-top: 23px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .menu__item {
+        padding-right: 10px;
+    }
+
+    .main-info{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 45px;
+
+}
+
+    .main-phone a {
+        font-family: "Lato-Black";
+        font-size: 14px;
+        line-height: 24px;
+        margin-right: 10px;
+        position: relative;
+        top: 4px;
+    }
+
+    .main-tp::before {
+
+        content: "";
+        position: absolute;
+        background-image: url("../img/plane_icon.svg");
+        width: 30px;
+        height: 30px;
+        left: -25px;
+        top: -13px;
+    
+    }
+
+    .main-tp a {
+        display: none;
+    }
+
+
+  }
+  
+
+  @media screen and (min-width: 768px) and (max-width:  1279px) {
+
+    .header-desktop
+    {
+        display: none;
+    }
+
+    .header-mobile
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu__list
+    {
+        flex-direction: column;
+    }
+
+    .menu__item
+    {
+        padding-right: 20px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+    }
+
+    .main-header__info
+    {
+        z-index: 999;
+    }
+
+    .main-header__logo
+    {
+        z-index: 999;
+    }
+      
+
+  }
+
+  @media screen and (min-width:0px) and (max-width:  767px) {
+
+    .header-desktop
+    {
+        display: none;
+    }
+
+    .header-mobile
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-header__info
+    {
+        z-index: 999;
+    }
+
+    .main-header__logo
+    {
+        z-index: 999;
+    }
+
+    .main-header__logo img
+    {
+        width: 100px;
+        padding-top: 30px;
+        padding-left: 35px;
+    }
+
+    .menu__list
+    {
+        flex-direction: column;
+    }
+
+    .menu__item
+    {
+        padding-right: 20px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+    }
+
+    .main-header__info
+    {
+        padding-left: 25px;
+    }
+
+    .main-tp::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/plane_icon.svg");
+        width: 30px;
+        height: 30px;
+        left: -20px;
+        top: -13px;
+    }
+      
+    .main-tp a {
+        display: none;
+    }
+
+  }
