@@ -25,7 +25,7 @@
     background-image: linear-gradient( 90deg, rgb(245,123,32) 0%, rgb(241,87,34) 100%);
     cursor: pointer;
     position: relative;
-    margin-top: -204px;
+    margin-top: -203px;
     text-decoration: none;
 }
 
@@ -72,6 +72,8 @@
     color: #fff;
     text-align: center;
     text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .hover__text
@@ -121,7 +123,7 @@
 
       .examples__block
     {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         display: block;
     }
 
@@ -138,6 +140,27 @@
     {
         display: none;
     }
+
+    .hover
+    {
+        display: none;
+    }
+
+    
+.hover__info
+{ 
+    display: none;
+}
+
+.examples__img:hover .hover{
+
+        display: none;
+}
+
+.example__button
+{
+    display: none;
+}
 
   
   }

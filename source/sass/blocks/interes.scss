@@ -1,0 +1,254 @@
+.interes__title
+{
+    width:365px;
+    font-family: $font-family-light;
+    font-size: 25px;
+    line-height: 35px;
+    color: #08395b;
+    padding-bottom: 40px;
+    text-align: center;
+    margin: 0 auto;
+    &--video 
+    {
+        padding-bottom: 60px;
+    }
+}
+
+
+
+.interes__area
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.interes__card 
+{
+    width: 24%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 32px 0px rgba(45, 68, 78, 0.1);
+    padding-top: 35px;
+    padding-bottom: 55px;
+    padding-left: 30px;
+    padding-right: 50px;
+    &--video 
+    {
+        width: 32%;
+        margin-bottom: 20px;
+    }
+
+    &--sensor
+    {
+        width: 47%;
+        border-radius: 10px;
+        padding-right: 60px;
+    }
+}
+
+
+.interes__info
+{
+    font-family: $font-family-light;
+    font-size: 18px;
+    line-height: 28px;
+    color: #08395b;
+}
+
+
+.interes__card--sensor .interes__info
+{
+    font-family: $font-family-bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2f6983;
+}
+
+.interes__numb
+{
+    font-family: $font-family;
+    font-size: 35px;
+    line-height: 52px;
+    color: #f57b20;
+    padding-right: 15px;
+}
+
+
+.interes__info--sensor 
+{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+}
+
+.interes__info--sensor .interes__numb
+{
+    float: left;
+}
+
+.interes__text
+{
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 23px;
+    color: #48474d;
+    margin-top: 20px;
+}
+
+/* Video */
+
+.need__area
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.need__card
+{
+    width: 20%;
+}
+
+.need__img 
+{
+    text-align: center;
+}
+
+.need__text
+{
+    width: 70%;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 20px;
+    color: #48474d;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+/* Sensor */
+
+.interes__info--two
+{
+    width: 70%;
+}
+
+.interes__about
+{
+    height: 280px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #efefef;
+
+}
+
+.interes__about--first
+{
+    height: 370px;
+}
+
+.interes__about:nth-child(1)
+{
+    border-top: none;
+
+}
+
+.interes__card--sensor .interes__text
+{
+    padding-right: 30px;
+}
+
+.interes__list 
+{
+    list-style-type: none;
+    list-style-image: url("../img/mark_new.png");
+
+}
+
+.interes__list li
+{
+    padding-bottom: 5px;
+    padding-left: 15px;
+    margin-left: 20px;
+}
+
+
+.interes__lead
+{
+    padding-bottom: 30px;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+
+    .interes__card 
+    {
+        width: 49%;
+        margin-bottom: 20px;
+    }
+
+    .interes__about {
+        height: auto;
+    }
+
+    .interes__about--first {
+        height: auto;
+    }
+    
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    .interes__title
+{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+
+    .interes__card 
+    {
+        width:90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .interes__card--sensor {
+        padding-right: 10px;
+    }
+
+    .need__area
+    {
+        flex-direction: column;
+    }
+
+    .need__card {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .need__text
+    {
+        margin-top: 15px;
+    }
+
+    .interes__about {
+        height: auto;
+    }
+
+    .interes__about--first {
+        height: auto;
+    }
+    
+}
+

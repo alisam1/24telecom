@@ -7,11 +7,39 @@
     padding-bottom: 30px;
 }
 
+.monitoring--control
+{   
+    width: 100%;
+    height: auto;
+    background-image: url(../img/mon_con.png);
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.monitoring--sensor
+{   
+    width: 100%;
+    height: auto;
+    background-image: url(../img/mon_bg.png);
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+
 .monitoring__blocks
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.monitoring__blocks--video
+{
+    justify-content: space-between;
 }
 
 
@@ -23,21 +51,36 @@
 
 .block-big
 {
-    width: 565px;
+    width: 60%;
 }
+
+.monitoring__blocks--video .block-big
+{
+    width: 49%;
+    margin-bottom: 20px;
+}
+
+
+.monitoring--sensor .block-big
+{
+    width: 49%;
+}
+
 
 
 .block-little
 {
-    width: 310px;
+    width: 35%;
 }
 
 
 
 .block__all
 {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .block__title
@@ -47,8 +90,29 @@
     font-size: 18px;
     line-height: 28px;
     color: #f57b20;
+    padding-bottom: 20px;
+    &--control
+    {
+        width: 70%;
+    }
 }
 
+
+.block__title--video 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.block__title--video span
+{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 
 .block__info
 {
@@ -70,7 +134,6 @@
 }
 
 
-
 .block__list--double
 {
     width: 100%;
@@ -87,14 +150,19 @@
 
 .block__item 
 {
-    width: 70%;
+    width: 100%;
     font-family: $font-family;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 22px;
     color: #444b51;
     list-style-type: none;
     padding: 0px 0px 0px 40px; 
     margin-bottom: 15px;
+    padding-right: 85px;
+    &--ik 
+    {
+        margin-bottom: 35px;
+    }
 }
 
 #item_1, #item_5
@@ -187,6 +255,11 @@
         flex-direction: column;
     }
 
+    .monitoring--sensor  .monitoring__blocks
+    {
+        flex-direction: column;
+    }
+
     .block-little {
         width: 310px;
         margin: 0 auto;
@@ -199,10 +272,32 @@
         margin: 0 auto;
     }
 
+    .monitoring__blocks--video .block-big {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .monitoring--sensor .block-big {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .block__item {
+        padding-right: 25px;
+    }
+
 
   }
   
   @media screen and (min-width: 0px) and (max-width: 767px) {
+
+    .monitoring {
+        width: 100%;
+        height: auto;
+        background-image: inherit;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
   
  
     .monitoring__blocks
@@ -210,18 +305,86 @@
         flex-direction: column;
     }
 
+    .block
+{
+    border-radius: 0px;
+}
+
+.block__all
+{
+    width: 90%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.block__title {
+    width: 80%;
+    font-family: "Lato-Bold";
+    font-size: 18px;
+    line-height: 28px;
+    color: #f57b20;
+    text-align: center;
+    margin: 0 auto;
+}
+
     .block-little {
         width: 100%;
-        max-width: 310px;
+        max-width: 100%;
         margin: 0 auto;
             margin-bottom: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .block-big {
         width: 100%;
-        max-width: 565px;
+        max-width: 100%;
         margin: 0 auto;
     }
+
+    .monitoring__blocks--video .block-big {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .monitoring__blocks--sensor .block-big {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .monitoring--sensor .block-big {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .block__list--double
+    {
+        column-count: 1;
+    }
+
+    .block__item
+    {
+        font-size: inherit;
+    }
+
+    .block__title--video 
+{
+    flex-direction: column;
+}
+
+.block__title--video span
+{
+    width: 90%;
+    justify-content: center;
+   margin: 0 auto;
+   margin-top: 15px;
+}
+
+.monitoring__blocks--video .block__price {
+    font-size: 20px;
+
+}
+
 
   }

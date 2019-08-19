@@ -9,7 +9,7 @@
 .order__left
 {
     width: 50%;
-    height: 430px;
+    height: auto;
     background: #f4fbff;
     background-size: cover;
     display: flex;
@@ -20,7 +20,7 @@
 .order__right
 {
     width: 50%;
-    height: 430px;
+    height: auto;
     background-image: url(../img/test_bg.png);
     background-size: cover;
     display: flex;
@@ -85,13 +85,17 @@
 .order__right .form
 {
     margin-left: 175px;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding-top: 60px;
+    padding-bottom: 50px;
 
 }
 
-.order__right .form 
+.order__left .form 
 {
    margin-top: 10px;
+   padding-top: 60px;
+   padding-bottom: 50px;
     
 }
 
@@ -103,6 +107,11 @@
     padding-right: 0;
     margin-top: 45px;
 }
+
+.order__right ::-webkit-input-placeholder {font-family: $font-family; color:#fff; opacity:1;}/* webkit */
+.order__right ::-moz-placeholder          {font-family: $font-family; color:#fff; opacity:1;}/* Firefox 19+ */
+.order__right  :-moz-placeholder           {font-family: $font-family-bold; color:#fff; opacity:1;}/* Firefox 18- */
+.order__right :-ms-input-placeholder      {font-family: $font-family; color:#fff; opacity:1;}/* IE */
 
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -193,17 +202,22 @@
 
     .order__left .form
     {
-        width: auto;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .order__left .form__title
     {
+        width: 90%;
+        margin: 0 auto;
         text-align: center;
     }
 
     .order__left .form form 
      
     {
+        width: 90%;
+        margin: 0 auto;
         margin: 0 auto;
     }
 
@@ -211,6 +225,7 @@
     .order__left .form input[type="submit"]
      
     {
+        width: 100%;
         margin: 0 auto;
         margin-top: 20px;
     }
@@ -223,12 +238,14 @@
 
     .order__right .form
     {
-        width: auto;
-        margin-left: 0;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .order__right .form__title
     {
+        width: 90%;
+        margin: 0 auto;
         text-align: center;
     }
 
@@ -242,6 +259,7 @@
     .order__right .form input[type="submit"]
      
     {
+        width: 100%;
         margin: 0 auto;
         margin-top: 20px;
     }

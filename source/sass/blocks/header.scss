@@ -81,6 +81,7 @@
     background: inherit;
     border: 1px solid #f15822;
     border-radius: 12px;
+    box-shadow: 0 0 1px 0px #f15822 inset, 0 0 1px 0px #f15822;
 }
 
 .main-call:hover
@@ -167,7 +168,7 @@
 
 
 
-@media screen and (min-width: 1280px) and (max-width:  1440px) {
+@media screen and (min-width: 1280px) and (max-width:  1570px) {
 
     .header-desktop
     {

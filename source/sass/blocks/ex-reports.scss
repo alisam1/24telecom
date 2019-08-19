@@ -1,0 +1,172 @@
+.ex-reports
+{
+    background-color: #f4fbff;
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+
+.ex-reports__images
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ex-reports__images img
+{
+    width: 100%;
+}
+
+.ex-reports__img img 
+{
+    border-radius: 10px;
+}
+
+
+/* Sensor */
+
+.ex-reports__top .ex-reports__images
+{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    bottom: 80px;
+    justify-content: center;
+}
+
+.ex-reports__top .ex-reports__title
+{
+    font-family: $font-family-light;
+    font-size: 25px;
+    line-height: 35px;
+    color: #08395b;
+    text-align: center;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.ex-reports__top .ex-reports__description
+{
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 23px;
+    color: #48474d;
+    text-align: center;
+    text-align: center;
+    width: 48%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.ex-reports__bottom .ex-reports__img
+{
+    height: 245px;
+    display:inline-block;
+    position:relative;
+    border-radius: 0;
+    box-shadow: 0px 8px 32px 0px rgba(45, 68, 78, 0.1);
+    }
+
+    
+.ex-reports__bottom .ex-reports__img img
+{
+    border-radius: 0;
+}
+
+    .ex-reports__bottom .ex-reports__img .ex-reports__text {
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    box-sizing: border-box;
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 23px;
+    color: #48474d;
+    text-align: center;
+    padding:10px;
+    background-color: #fff;
+    height: 100px;
+    
+    }
+
+    .ex-reports__bottom .ex-reports__img .ex-reports__text p
+    {
+
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+
+    }
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .ex-reports__images
+    {
+        flex-direction: column;
+    }
+
+    .ex-reports__img
+    {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    
+.ex-reports__images img
+{
+    width: 70%;
+    margin: 0 auto;
+}
+
+    .ex-reports__top .ex-reports__title
+    {
+        width: 80%;
+        margin-top: -20px;
+    }
+
+
+   
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+
+    .ex-reports__images
+    {
+        flex-direction: column;
+    }
+
+    .ex-reports__img
+    {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .ex-reports__img img
+    {
+        width: 100%;
+    }
+
+     
+    .ex-reports__top .ex-reports__title
+    {
+        width: 80%;
+        margin-top: -20px;
+    }
+
+    .ex-reports__top .ex-reports__description
+    {
+        width: 80%;
+    }
+
+
+
+}

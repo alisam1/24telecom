@@ -43,25 +43,46 @@ $(document).ready(function() {
 
     /* Responsive slider */
 
-    $('.examples__block').slick({
-      dots: false,
-      arrows: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      responsive: [
-        {
-          breakpoint: 6000,
-          settings: "unslick"
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            dots: false,
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+    var examplesSlider = $('.examples__block');
+    settings = {
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    }
+
+    // reslick only if it's not slick()
+    $(window).on('load resize', function() {
+      if ($(window).width() >= 768) {
+        if (examplesSlider.hasClass('slick-initialized')) {
+          examplesSlider.slick('unslick');
         }
-      ]
+        return
+      }
+
+      if (!examplesSlider.hasClass('slick-initialized')) {
+        return examplesSlider.slick(settings);
+      }
     });
+
+    /* GSAP */
+
+    document.getElementById("line");
+    TweenLite.to(bar, 0.5, {width:"100px", height:"2px"});
+
+    document.getElementById("line1");
+    TweenLite.to(bar1, 2, {width:"100px", height:"2px", delay:1});
+
+    document.getElementById("line2");
+    TweenLite.to(bar2, 3, {width:"100px", height:"2px", delay:2});
+
+    document.getElementById("line");
+    TweenLite.to(bar4, 0.5, {width:"2px", height:"60px"});
+
+    document.getElementById("line1");
+    TweenLite.to(bar3, 0.5, {width:"2px", height:"60px"});
+
+    document.getElementById("line2");
+    TweenLite.to(bar5, 0.5, {width:"2px", height:"60px"});

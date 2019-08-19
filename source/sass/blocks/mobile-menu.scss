@@ -8,6 +8,7 @@
     z-index: 1;
     background: #08395b;
     transition: left 0.5s 0.5s;
+    z-index: 999;
   }
 
   .mobile_menu
@@ -18,6 +19,7 @@
   .menu_mobile.active {
     left: 0;
     transition: left 0.5s;
+    z-index: 999;
   }
   
   .close-menu {
