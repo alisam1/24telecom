@@ -71,6 +71,11 @@
   color: #fff;
 }
 
+.main__slider--main .slider__info
+{
+ padding-bottom: 80px;
+}
+
 .main__slider--control .slider__info
 {
   font-size: 30px;
@@ -145,6 +150,11 @@
   font-family: $font-family;
   font-size: 13px;
   line-height: 21px;
+}
+
+.main__slider--main .slider__title
+{
+ padding-bottom:50px;
 }
 
 .video__list

@@ -590,6 +590,9 @@ template {
   letter-spacing: -0.01em;
   color: #fff; }
 
+.main__slider--main .slider__info {
+  padding-bottom: 80px; }
+
 .main__slider--control .slider__info {
   font-size: 30px;
   line-height: 36px;
@@ -642,6 +645,9 @@ template {
   font-family: "Lato";
   font-size: 13px;
   line-height: 21px; }
+
+.main__slider--main .slider__title {
+  padding-bottom: 50px; }
 
 .video__list {
   margin-left: 12px; }
