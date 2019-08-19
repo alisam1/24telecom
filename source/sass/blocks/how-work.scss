@@ -31,6 +31,51 @@
 .how-work__card
 {
     width: 24%;
+    position: relative;
+}
+
+.how-work__card--one::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_one.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: -20px;
+}
+
+.how-work__card--two::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_two.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: -20px;
+}
+
+.how-work__card--three::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_three.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: -20px;
+}
+
+.how-work__card--four::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_four.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: -20px;
 }
 
 #bar
@@ -119,6 +164,53 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .how-work__card--one::before
+    {
+        content: "";
+        position: absolute;
+        background-image: url("../img/icon_one.svg");
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        left: 10px;
+    }
+    
+    .how-work__card--two::before
+    {
+        content: "";
+        position: absolute;
+        background-image: url("../img/icon_two.svg");
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        left: 10px;
+    }
+    
+    .how-work__card--three::before
+    {
+        content: "";
+        position: absolute;
+        background-image: url("../img/icon_three.svg");
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        left: 10px;
+    }
+    
+    .how-work__card--four::before
+    {
+        content: "";
+        position: absolute;
+        background-image: url("../img/icon_four.svg");
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        left: 10px;
+    }
+
+    
+
     #bar
     {
         background-color:#f57b20;
@@ -224,6 +316,50 @@
         margin: 0 auto;
         margin-top: 80px;
     }
+
+    .how-work__card--one::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_one.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 30px;
+}
+
+.how-work__card--two::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_two.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 30px;
+}
+
+.how-work__card--three::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_three.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 30px;
+}
+
+.how-work__card--four::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_four.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 30px;
+}
 
     .how-work__img
     {
