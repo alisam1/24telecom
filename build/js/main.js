@@ -98,11 +98,11 @@ $(document).ready(function() {
       }
     });
     
-    var $block2 = $('#area');
+    var $area = $('#area');
     
     function ZagolovokBlock2IsInVision() {
       var windowBottom = $(window).scrollTop() + $(window).height();
-      var block2Bottom = $block2.offset().top + $('.how-work').height();
+      var block2Bottom = $area.offset().top + $('.how-work').height();
       return windowBottom >= block2Bottom;
     }
     
