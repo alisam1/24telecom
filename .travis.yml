@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "10.16.0"
+  - "11.0"
 
 notifications:
   email: false
@@ -9,12 +9,10 @@ notifications:
 script: gulp build
 
 deploy:
-edge:
-    branch: v1.8.47
   provider: pages
   skip-cleanup: true
   local-dir: build
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
-    branch: master
+branch: master
