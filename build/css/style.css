@@ -3123,6 +3123,19 @@ img.mfp-img {
   .interes__about--first {
     height: auto; } }
 
+#reveal1 {
+  opacity: 0;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+
+#reveal1.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none; }
+
 .how-work {
   background-color: #f4fbff;
   padding-top: 40px;

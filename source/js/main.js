@@ -67,7 +67,7 @@ $(document).ready(function() {
       }
     });
 
-    /* GSAP */
+    /* GSAP
 
     document.getElementById("line");
     TweenLite.to(bar, 0.5, {width:"100px", height:"2px"});
@@ -86,3 +86,42 @@ $(document).ready(function() {
 
     document.getElementById("line2");
     TweenLite.to(bar5, 0.5, {width:"2px", height:"60px"});
+     */
+
+
+    /* Scroll */ 
+
+    $(window).scroll(function() {
+      console.log('event scroll');
+      if (ZagolovokBlock2IsInVision()) {
+        ShowText();
+      }
+    });
+    
+    var $block2 = $('#area');
+    
+    function ZagolovokBlock2IsInVision() {
+      var windowBottom = $(window).scrollTop() + $(window).height();
+      var block2Bottom = $block2.offset().top + $('.how-work').height();
+      return windowBottom >= block2Bottom;
+    }
+    
+    function ShowText() {
+      document.getElementById("line");
+        TweenLite.to(bar, 0.5, {width:"100px", height:"2px"});
+    
+        document.getElementById("line1");
+        TweenLite.to(bar1, 2, {width:"100px", height:"2px", delay:1});
+    
+        document.getElementById("line2");
+        TweenLite.to(bar2, 3, {width:"100px", height:"2px", delay:2});
+    
+        document.getElementById("line");
+        TweenLite.to(bar4, 0.5, {width:"2px", height:"60px"});
+    
+        document.getElementById("line1");
+        TweenLite.to(bar3, 0.5, {width:"2px", height:"60px"});
+    
+        document.getElementById("line2");
+        TweenLite.to(bar5, 0.5, {width:"2px", height:"60px"});
+    }
