@@ -106,6 +106,7 @@ $(document).ready(function() {
       return windowBottom >= block2Bottom;
     }
     
+    
     function ShowText() {
       document.getElementById("line");
         TweenLite.to(bar, 0.5, {width:"100px", height:"2px"});
