@@ -32,6 +32,15 @@
     position: relative;
     bottom: 80px;
     justify-content: center;
+    &--mac 
+    {
+        width: 70%;
+    }
+}
+
+.ex-reports__top .ex-reports__images--mac img 
+{
+    width: auto;
 }
 
 .ex-reports__top .ex-reports__title
@@ -120,7 +129,7 @@
     
 .ex-reports__images img
 {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 

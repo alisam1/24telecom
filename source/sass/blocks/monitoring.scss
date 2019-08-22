@@ -165,6 +165,17 @@
     }
 }
 
+.monitoring__blocks--video .block__item 
+{
+    padding: 0;
+    padding-right: 25px;
+}
+
+.monitoring--sensor .block__item 
+{
+    padding-right: 25px;
+}
+
 #item_1, #item_5
 {
     background-image: url(../img/item_1.svg);
@@ -284,6 +295,11 @@
 
     .block__item {
         padding-right: 25px;
+    }
+
+    .interes__info--two
+    {
+        padding-right: 20px;
     }
 
 

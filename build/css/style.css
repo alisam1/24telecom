@@ -565,6 +565,15 @@ template {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
 
+.main__slider--video .slide__content {
+  height: 512px; }
+
+.main__slider--sensor .slide__content {
+  height: 512px; }
+
+.main__slider--truck .slide__content {
+  height: 512px; }
+
 .slider__all {
   text-align: left;
   max-width: 565px;
@@ -582,6 +591,18 @@ template {
 
 .main__slider--control .slide__img img {
   height: 440px; }
+
+.main__slider--video .slide__img {
+  background-image: url("../img/img_3.png");
+  background-size: cover; }
+
+.main__slider--sensor .slide__img {
+  background-image: url("../img/img_4.png");
+  background-size: cover; }
+
+.main__slider--truck .slide__img {
+  background-image: url("../img/truck.png");
+  background-size: cover; }
 
 .slider__info {
   font-family: "Lato-Bold";
@@ -662,16 +683,33 @@ template {
     width: 100%;
     max-width: none;
     text-align: center; }
+  .main__slider--sensor .slide_1 {
+    height: 400px; }
+  .main__slider--truck .slide_1 {
+    height: 420px; }
+  .main__slider--control .slider__info {
+    padding-bottom: 0; }
+  .main__slider--sensor .slider__info {
+    padding-bottom: 60px; }
   .main__slider--video .slider__info {
     padding-bottom: 0px; }
   .main__slider--truck .slider__info {
     padding-bottom: 0px; }
+  .main__slider--main .slider__info {
+    padding-bottom: 40px; }
   .slider__description {
     width: 420px;
     margin: 0 auto;
     margin-top: 50px; }
+  .main__slider--main .slider__description {
+    margin-top: 0px;
+    margin-bottom: 100px; }
+  .main__slider--sensor .slider__description {
+    margin-top: 0; }
   .slider__description--truck-double {
     margin-top: 10px; }
+  .slider__description--control {
+    font-size: 16px; }
   .main__slider--control .slide__img {
     display: none; }
   .main__slider--video .slide__img {
@@ -762,6 +800,8 @@ template {
     margin: 0 auto;
     bottom: 160px;
     margin-left: 50px; }
+  .main__slider--main .slider__info {
+    padding-bottom: 0px; }
   .main__slider--control .slider__info {
     font-size: 30px;
     line-height: 36px;
@@ -773,6 +813,8 @@ template {
     font-size: 24px;
     line-height: 32px;
     padding-bottom: 0px; }
+  .main__slider--main .slider__description {
+    margin-top: 0; }
   .slider__description--control {
     width: 80%;
     margin-top: 0; }
@@ -1178,7 +1220,7 @@ template {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .main__slider .slick-dots {
     position: relative;
-    bottom: 100px;
+    bottom: 50px;
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1633,10 +1675,22 @@ template {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .scope__area {
-    width: 80%;
+    width: 90%;
     margin: 0 auto; }
   .scope__area--truck .scope__card {
-    width: 50%; } }
+    width: 50%;
+    margin-bottom: 40px; }
+  .scope__card {
+    padding-right: 20px; }
+  .scope__icon {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-right: 10px; }
+  .scope__text {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; } }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .scope__card {
@@ -1784,7 +1838,8 @@ template {
         -ms-flex-pack: center;
             justify-content: center; }
   .test__info .form {
-    width: auto; }
+    width: auto;
+    padding-bottom: 70px; }
   .test__info .form__title {
     text-align: center; }
   .test__info .form form {
@@ -1984,6 +2039,13 @@ template {
   .block__item--ik {
     margin-bottom: 35px; }
 
+.monitoring__blocks--video .block__item {
+  padding: 0;
+  padding-right: 25px; }
+
+.monitoring--sensor .block__item {
+  padding-right: 25px; }
+
 #item_1, #item_5 {
   background-image: url(../img/item_1.svg);
   background-repeat: no-repeat;
@@ -2070,7 +2132,9 @@ template {
     width: 90%;
     margin-bottom: 20px; }
   .block__item {
-    padding-right: 25px; } }
+    padding-right: 25px; }
+  .interes__info--two {
+    padding-right: 20px; } }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .monitoring {
@@ -2162,6 +2226,9 @@ template {
   padding-top: 45px;
   padding-bottom: 35px; }
 
+.examples__img {
+  position: relative; }
+
 .examples__img:hover .hover {
   width: 270px;
   height: 200px;
@@ -2170,8 +2237,8 @@ template {
   background-image: -webkit-gradient(linear, left top, right top, from(#f57b20), to(#f15722));
   background-image: linear-gradient(90deg, #f57b20 0%, #f15722 100%);
   cursor: pointer;
-  position: relative;
-  margin-top: -203px;
+  position: absolute;
+  top: 0px;
   text-decoration: none; }
 
 .examples__img img {
@@ -3061,13 +3128,13 @@ img.mfp-img {
   width: 70%; }
 
 .interes__about {
-  height: 280px;
+  height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   border-top: 1px solid #efefef; }
 
 .interes__about--first {
-  height: 370px; }
+  height: auto; }
 
 .interes__about:nth-child(1) {
   border-top: none; }
@@ -3563,6 +3630,11 @@ img.mfp-img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .ex-reports__top .ex-reports__images--mac {
+    width: 70%; }
+
+.ex-reports__top .ex-reports__images--mac img {
+  width: auto; }
 
 .ex-reports__top .ex-reports__title {
   font-family: "Lato-Light";
@@ -3629,7 +3701,7 @@ img.mfp-img {
     margin: 0 auto;
     margin-bottom: 20px; }
   .ex-reports__images img {
-    width: 70%;
+    width: 100%;
     margin: 0 auto; }
   .ex-reports__top .ex-reports__title {
     width: 80%;

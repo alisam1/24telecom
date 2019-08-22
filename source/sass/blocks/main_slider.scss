@@ -36,6 +36,23 @@
 
 }
 
+.main__slider--video .slide__content
+{
+  height: 512px;
+}
+
+.main__slider--sensor .slide__content
+{
+  height: 512px;
+}
+
+
+.main__slider--truck .slide__content
+{
+  height: 512px;
+}
+
+
 .slider__all
 {
   text-align: left;
@@ -61,6 +78,26 @@
 {
   height: 440px;
 }
+
+.main__slider--video .slide__img
+{
+  background-image: url("../img/img_3.png");
+  background-size: cover;
+}
+
+.main__slider--sensor .slide__img
+{
+  background-image: url("../img/img_4.png");
+  background-size: cover;
+}
+
+
+.main__slider--truck .slide__img
+{
+  background-image: url("../img/truck.png");
+  background-size: cover;
+}
+
 
 .slider__info
 {
@@ -179,12 +216,33 @@
     text-align: center;
   }
 
+  .main__slider--sensor .slide_1 {
+    height: 400px;
+}
+
+.main__slider--truck .slide_1 {
+  height: 420px;
+}
+
+  .main__slider--control .slider__info
+  {
+    padding-bottom: 0;
+  }
+
+  .main__slider--sensor .slider__info {
+    padding-bottom: 60px;
+}
+
   .main__slider--video .slider__info {
     padding-bottom: 0px;
 }
 
 .main__slider--truck .slider__info {
   padding-bottom: 0px;
+}
+
+.main__slider--main .slider__info {
+  padding-bottom: 40px;
 }
 
   .slider__description
@@ -194,9 +252,24 @@
       margin-top: 50px;
     }
 
+    .main__slider--main .slider__description
+    {
+      margin-top: 0px;
+      margin-bottom: 100px;
+    }
+
+    .main__slider--sensor .slider__description {
+      margin-top: 0;
+  }
+
     .slider__description--truck-double
     {
       margin-top: 10px;
+    }
+
+    .slider__description--control
+    {
+      font-size: 16px;
     }
 
     .main__slider--control .slide__img
@@ -378,6 +451,10 @@
   margin-left: 50px;
 }
 
+.main__slider--main .slider__info {
+  padding-bottom: 0px;
+}
+
 .main__slider--control .slider__info {
   font-size: 30px;
   line-height: 36px;
@@ -392,6 +469,11 @@
   font-size: 24px;
   line-height: 32px;
   padding-bottom: 0px;
+}
+
+.main__slider--main .slider__description
+{
+  margin-top: 0;
 }
 
 .slider__description--control

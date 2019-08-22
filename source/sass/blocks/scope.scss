@@ -65,12 +65,29 @@ margin-right: -15px;
 
 .scope__area
 {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .scope__area--truck .scope__card {
     width: 50%;
+    margin-bottom: 40px;
+}
+
+.scope__card
+{
+    padding-right: 20px;
+}
+
+.scope__icon
+{
+    align-items: baseline;
+    padding-right: 10px;
+}
+
+.scope__text
+{
+    align-items: baseline;
 }
 
   }

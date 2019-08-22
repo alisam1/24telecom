@@ -67,6 +67,25 @@ $(document).ready(function() {
       }
     });
 
+        /* Height */
+
+        var mh = 0;
+   $(".interes__about").each(function () {
+       var h_block = parseInt($(this).height());
+       if(h_block > mh) {
+          mh = h_block;
+       };
+   });
+   $(".interes__about").height(mh);
+
+        /*
+         $(function(){
+        $('.interes__about').matchHeight({
+          property: 'height'
+        });
+    });
+*/
+
     /* GSAP
 
     document.getElementById("line");
@@ -92,17 +111,16 @@ $(document).ready(function() {
     /* Scroll */ 
 
     $(window).scroll(function() {
-      console.log('event scroll');
       if (ZagolovokBlock2IsInVision()) {
         ShowText();
       }
     });
     
-    var $area = $('#area');
+    var area = $('#area');
     
     function ZagolovokBlock2IsInVision() {
       var windowBottom = $(window).scrollTop() + $(window).height();
-      var block2Bottom = $area.offset().top + $('.how-work').height();
+      var block2Bottom = area.offset().top + $('.how-work').height();
       return windowBottom >= block2Bottom;
     }
     
@@ -126,3 +144,4 @@ $(document).ready(function() {
         document.getElementById("line2");
         TweenLite.to(bar5, 0.5, {width:"2px", height:"60px"});
     }
+
