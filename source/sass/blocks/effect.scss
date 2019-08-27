@@ -1,0 +1,122 @@
+.effect
+{   
+    background-color: #fff;
+    padding-top: 45px;
+    padding-bottom: 75px;
+}
+
+.effect__title 
+{
+    font-family: $font-family-light;
+    font-size: 25px;
+    line-height: 35px;
+    color: #08395b;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.effect__area
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.effect__system 
+{
+    padding-bottom: 15px;
+}
+
+.system__numb
+{
+    font-family: $font-family;
+    font-size: 14px;
+    color: #f57b20;
+    padding-bottom: 10px;
+}
+
+.system__numb img
+{
+    padding-left: 10px;
+}
+
+
+.system__info
+{
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 20px;
+    color: #cececf;
+}
+
+.effect__text
+{
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 20px;
+    color: #48474d;
+}
+
+
+.effect__block
+{
+    width: 40%;
+    margin: 0 auto;
+    border-top: 1px solid #efefef;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.effect__content 
+{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 20px;
+    color: #48474d;
+    padding-bottom: 25px;
+}
+
+.effect__price
+{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 25px;
+    color: #48474d;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .effect__area
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.effect__card
+{
+    width: 45%;
+    margin-bottom: 30px;
+}
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    .effect__area
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.effect__block {
+
+    width: 80%;
+}
+}

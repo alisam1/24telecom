@@ -26,6 +26,13 @@
 
 }
 
+.interes__area--principle
+{
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
 .interes__card 
 {
     width: 24%;
@@ -183,6 +190,123 @@
 }
 
 
+/* Seal */
+
+.interes__card--seal 
+{
+    width: 49%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 24px 49px 0px rgba(45, 68, 78, 0.09);
+}
+
+.interes__card--seal .interes__numb
+{
+    float: left;
+    padding-right: 40px;
+}
+
+.interes__card--seal .interes__info
+{
+    font-family: $font-family-bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2f6983;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 20px;
+}
+  
+  
+
+.principle__card
+{
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.principle__card::after
+{
+    content: "";
+    background-image: url("../img/pr_line.svg");
+    width: 85px;
+    height: 1px;
+    position: absolute;
+    top: 80px;
+    left: 250px;
+}
+
+.principle__card:nth-child(3)::after
+{
+    display: none;
+}
+
+.principle__img 
+{
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.principle__img::before
+{
+    content: "";
+    background-image: url("../img/lock_icon.svg");
+    background-color: rgb(255, 255, 255);
+    box-shadow: 13.896px 12.958px 62px 0px rgba(67, 156, 193, 0.26);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -30px;
+    left: -10px;
+}
+
+.principle__card--open .principle__img::before
+{
+    content: "";
+    background-image: url("../img/lock_open.svg");
+    background-color: rgb(255, 255, 255);
+    box-shadow: 13.896px 12.958px 62px 0px rgba(67, 156, 193, 0.26);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -30px;
+    left: -10px;
+}
+  
+
+.principle__text
+{
+    font-family: $font-family-bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2f6983;
+    text-align: center;
+}
+
+.green 
+{
+    display: block;
+    color: #2bad62;
+}
+
+.red
+{
+    display: block;
+    color: #da4040;
+}
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
@@ -250,5 +374,21 @@
         height: auto;
     }
     
+    .principle__card
+    {
+        margin-bottom: 50px;
+    }
+
+    
+    .principle__card::after
+{
+    content: "";
+    background-image: url("../img/pr_line.svg");
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    top: 220px;
+    left: 105px;
+}
 }
 

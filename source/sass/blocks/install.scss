@@ -1,0 +1,402 @@
+.install 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 300px;
+}
+
+.install__title
+{
+    font-family: $font-family-light;
+    font-size: 24px;
+    line-height: 35px;
+    color: #08395b;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.install__block 
+{
+    width: 49%;
+}
+
+.install__sheme
+{
+    position: relative;
+}
+
+.install__picture 
+{
+    display: flex;
+    flex-direction: row;
+    max-width: 270px;
+}
+
+.install__picture--one
+{
+    position: absolute;
+    left: 220px;
+    top: 0px;
+}
+
+.install__picture--one img
+{
+    position: relative;
+    z-index: 999;
+}
+
+
+.install__picture--one::before
+{
+    content: "";
+    background-image: url("../img/picline_1.png");
+    width: 128px;
+    height: 85px;
+    position: absolute;
+    top: 40px;
+    left: -57px;
+    z-index: 995;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.install__picture--two
+{
+    position: absolute;
+    top: 310px;
+    left: 225px;
+}
+
+
+.install__picture--two img
+{
+    position: relative;
+    z-index: 999;
+}
+
+
+.install__picture--two::before
+{
+    content: "";
+    background-image: url("../img/picline_2.png");
+    width: 2px;
+    height: 139px;
+    position: absolute;
+    left: 36px;
+    top: -73px;
+    z-index: 995;
+}
+
+.install__picture--three
+{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+
+.install__picture--three img
+{
+    position: relative;
+    z-index: 999;
+}
+
+
+.install__picture--three::before
+{
+    content: "";
+    background-image: url("../img/picline_3.png");
+    width: 66px;
+    height: 122px;
+    position: absolute;
+    top: 65px;
+    left: 30px;
+    z-index: 995;
+}
+
+.install__picture--four
+{
+    position: absolute;
+    left: 350px;
+    top: 0px;
+}
+
+.install__picture--four img
+{
+    position: relative;
+    z-index: 999;
+}
+
+
+.install__picture--four::before
+{
+    content: "";
+    background-image: url("../img/picline_4.png");
+    width: 67px;
+    height: 78px;
+    position: absolute;
+    top: 45px;
+    left: -40px;
+    z-index: 995;
+}
+
+.install__picture--five
+{
+    position: absolute;
+    left: 140px;
+    top: 305px;
+}
+
+.install__picture--five img
+{
+    position: relative;
+    z-index: 999;
+}
+
+
+.install__picture--five::before
+{
+    content: "";
+    background-image: url("../img/picline_5.png");
+    width: 101px;
+    height: 118px;
+    position: absolute;
+    top: -75px;
+    left: -40px;
+    z-index: 995;
+}
+
+
+.picture__block
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.install__img
+{
+    position: relative;
+}
+
+.install__img--one
+{
+    top: 120px;
+    text-align: center;
+}
+
+.install__img--two
+{
+    top: 120px;
+    text-align: center;
+}
+
+.pictue__text
+{
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 20px;
+    color: #48474d;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+   .install
+   {
+       flex-direction: column;
+   }
+
+   .install__block {
+    width: 80%;
+    margin: 0 auto;
+   }
+
+   .install__block:nth-child(1)
+   {
+       margin-bottom: 300px;
+   }
+
+   .install__picture--one {
+    position: absolute;
+    left: 247px;
+    top: 0px;
+}
+
+.install__picture--two {
+    position: absolute;
+    top: 310px;
+    left: 253px;
+}
+
+.install__picture--three {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+}
+
+
+.install__picture--four {
+    position: absolute;
+    left: 380px;
+    top: 0px;
+}
+
+.install__picture--five {
+    position: absolute;
+    left: 170px;
+    top: 305px;
+}
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    
+   .install
+   {
+       flex-direction: column;
+       padding-bottom: 340px;
+   }
+
+   .install__title
+   {
+       width: 90%;
+       font-size: 20px;
+        line-height: 26px;
+        color: #08395b;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 50px;
+   }
+
+   .install__block {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 260px;
+   }
+
+   .install__block:nth-child(1)
+   {
+       margin-bottom: 300px;
+   }
+
+   .install__img img 
+   {
+       width: 90%;
+       max-width: 230px;
+   }
+
+   .pictue__text
+   {
+       width: 50%;
+       font-size: 12px;
+       line-height: 16px;
+       padding-left: 10px;
+   }
+
+   .install__picture img
+   {
+       width: 55px;
+   }
+
+   .install__picture--one {
+    position: absolute;
+    left: 115px;
+    top: 10px;
+}
+
+.install__picture--one::before {
+    content: "";
+    background-image: url("../img/picline_1.png");
+    width: 95px;
+    height: 85px;
+    position: absolute;
+    top: 30px;
+    left: -57px;
+    z-index: 995;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.install__picture--two {
+    position: absolute;
+    top: 265px;
+    left: 93px;
+}
+
+
+.install__picture--two::before {
+
+    content: "";
+    background-image: url("../img/picline_2.png");
+    width: 2px;
+    height: 110px;
+    position: absolute;
+    left: 26px;
+    top: -73px;
+    z-index: 995;
+
+}
+
+
+.install__picture--three {
+    position: absolute;
+    left: -25px;
+    top: -20px;
+}
+
+.install__picture--three::before {
+    content: "";
+    background-image: url("../img/picline_3.png");
+    width: 46px;
+    height: 122px;
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    z-index: 995;
+}
+
+.install__picture--four {
+    position: absolute;
+    left: 185px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.install__picture--four .pictue__text
+{
+    margin-left: -20px;
+}
+
+.install__picture--five {
+    position: absolute;
+    left: 170px;
+    top: 258px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pictue__text
+    {
+        width: 80%;
+        max-width: 120px;
+    }
+
+    .install__picture--three .pictue__text
+        {
+            width: 50%;
+        }
+
+        .install__picture--four .pictue__text {
+            width: 120px;
+        }
+
+        .install__picture--five .pictue__text {
+            width: 110px;
+        }
+
+}

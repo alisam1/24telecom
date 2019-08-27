@@ -54,6 +54,7 @@
     width: 40%;
     margin: 0 auto;
     margin-bottom: 40px;
+    margin-top: -40px;
 }
 
 .ex-reports__top .ex-reports__description
@@ -67,6 +68,10 @@
     width: 48%;
     margin: 0 auto;
     margin-bottom: 40px;
+    &--seal 
+    {
+        width: 70%;
+    }
 }
 
 .ex-reports__bottom .ex-reports__img
@@ -83,6 +88,7 @@
 {
     border-radius: 0;
 }
+
 
     .ex-reports__bottom .ex-reports__img .ex-reports__text {
     display:block;
@@ -109,6 +115,27 @@
         margin: 0 auto;
         margin-top: 10px;
 
+    }
+
+    .ex-reports--logo
+    {
+        background-color: #f4fbff;
+    }
+
+    .ex-reports__title--logo
+    {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .logo__area 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
     }
 
 
@@ -139,6 +166,10 @@
         margin-top: -20px;
     }
 
+    .logo__area
+    {
+        width: 100%;
+    }
 
    
 }
@@ -146,6 +177,10 @@
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
 
+    .ex-reports--logo
+    {
+        padding-bottom: 0;
+    }
 
     .ex-reports__images
     {
@@ -176,6 +211,27 @@
         width: 80%;
     }
 
+    .ex-reports__top .ex-reports__images--mac img {
+
+        width: 100%;
+    
+    }
+
+    .logo__area 
+    {
+       flex-direction: column;
+    }
+
+    
+    .logo__area img 
+    {
+        padding-bottom: 50px;  
+    }
+
+    .logo__area img:nth-child(5)
+    {
+        padding-bottom: 0;
+    }
 
 
 }
