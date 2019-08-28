@@ -744,7 +744,7 @@ template {
   .main__slider--truck .slide_1 {
     height: 420px; }
   .main__slider--seal .slide__content {
-    height: 690px; }
+    height: 720px; }
   .main__slider--control .slider__info {
     padding-bottom: 0; }
   .main__slider--sensor .slider__info {
@@ -794,11 +794,13 @@ template {
     line-height: 30px;
     padding-bottom: 20px; }
   .video__list {
-    margin-left: 12px; }
+    margin-left: 12px;
+    list-style-type: none; }
   .video__list li {
     font-family: "Lato";
     font-size: 18px;
-    line-height: 30px; } }
+    line-height: 30px;
+    padding-bottom: 10px; } }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .slider__breadcrumbs {
@@ -912,6 +914,8 @@ template {
     padding-top: 20px; }
   .video__title {
     padding-bottom: 20px; }
+  .video__list {
+    list-style-type: none; }
   .video__list li {
     margin-bottom: 20px; } }
 
@@ -3161,14 +3165,21 @@ img.mfp-img {
   font-family: "Lato-Bold";
   font-size: 18px;
   line-height: 24px;
-  color: #2f6983; }
+  color: #2f6983;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .interes__numb {
   font-family: "Lato";
   font-size: 35px;
   line-height: 52px;
   color: #f57b20;
-  padding-right: 15px; }
+  padding-right: 15px;
+  padding-bottom: 5px; }
 
 .interes__info--sensor {
   padding-bottom: 20px;
@@ -3352,7 +3363,15 @@ img.mfp-img {
   .interes__about {
     height: auto; }
   .interes__about--first {
-    height: auto; } }
+    height: auto; }
+  .principle__card::after {
+    content: "";
+    background-image: url("../img/pr_line.svg");
+    width: 40px;
+    height: 1px;
+    position: absolute;
+    top: 80px;
+    left: 215px; } }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .interes__title {
@@ -4130,7 +4149,8 @@ img.mfp-img {
   font-family: "Lato";
   font-size: 14px;
   line-height: 20px;
-  color: #48474d; }
+  color: #48474d;
+  padding-bottom: 20px; }
 
 .effect__block {
   width: 40%;

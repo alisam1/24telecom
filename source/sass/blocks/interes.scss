@@ -72,6 +72,8 @@
     font-size: 18px;
     line-height: 24px;
     color: #2f6983;
+    display: flex;
+    align-items: center;
 }
 
 .interes__numb
@@ -81,6 +83,7 @@
     line-height: 52px;
     color: #f57b20;
     padding-right: 15px;
+    padding-bottom: 5px;
 }
 
 
@@ -323,6 +326,16 @@
 
     .interes__about--first {
         height: auto;
+    }
+
+    .principle__card::after {
+        content: "";
+        background-image: url("../img/pr_line.svg");
+        width: 40px;
+        height: 1px;
+        position: absolute;
+        top: 80px;
+        left: 215px;
     }
     
 
