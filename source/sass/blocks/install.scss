@@ -380,6 +380,16 @@
     flex-direction: column;
 }
 
+
+.install__picture--five::before
+{
+    width: 91px;
+}
+
+.install__picture--five img
+{
+margin-top: 15px;
+}
 .pictue__text
     {
         width: 80%;

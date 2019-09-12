@@ -1,0 +1,87 @@
+.principles__content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.principles__card
+{
+    width: 30%;
+}
+
+.principles__img
+{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.principles__text
+{
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 24px;
+    color: #444b51;
+}
+
+.principles__img--back
+{
+    position: relative;
+}
+
+
+.principles__img--back::before
+{
+    content: "Полный";
+    position: absolute;
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 24px;
+    color: #444b51;
+    top: 50px;
+    left: 250px;
+}
+
+.principles__img--back::after
+{
+    content: "Пустой";
+    position: absolute;
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 24px;
+    color: #444b51;
+    top: 75px;
+    left: 250px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    .principles__content
+    {
+        flex-direction: column;
+    }
+
+    .principles__card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .principles__img--back
+{
+    justify-content: flex-start;
+}
+
+.principles__img--back::before
+{
+    left: 50%;
+}
+
+.principles__img--back::after
+{
+    left: 50%;
+}
+}

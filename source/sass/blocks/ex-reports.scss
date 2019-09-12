@@ -136,8 +136,63 @@
         width: 80%;
         margin: 0 auto;
         padding-bottom: 20px;
+        &--po 
+        {
+        justify-content: space-around;
+        width: 50%;
+        }
+        &--pressure
+        {
+            width: 100%;
+        }
     }
 
+
+
+    .po__img 
+    {
+        width: 260px;
+        height: 340px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 24px 49px 0px rgba(45, 68, 78, 0.17);
+        padding-top: 30px;
+        padding-left: 20px;
+
+        &--ref 
+        {
+            width: auto;
+            height: auto;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-bottom: 0px;
+            padding-right: 0px;
+            display: flex;
+            align-items: center;   
+        }
+
+    }
+
+    .logo__area--pressure .po__img
+    {
+        width: auto;
+        height: auto;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo__area--ref 
+    {
+        justify-content: space-between;
+        width: 75%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+      
 
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -169,6 +224,25 @@
     .logo__area
     {
         width: 100%;
+    }
+
+    .logo__area--po
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo__area--pressure
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .po__img {
+        
+        max-width: 260px;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 
    
@@ -228,8 +302,37 @@
         padding-bottom: 50px;  
     }
 
+    .logo__area--ref img
+    {
+        padding-bottom: 0;
+    }
+
     .logo__area img:nth-child(5)
     {
+        padding-bottom: 0;
+    }
+
+    .logo__area--po
+    {
+        width: 100%;
+    }
+
+    .po__img {
+        
+        max-width: 260px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .po__img--ref {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .logo__area--ref img
+    {
+        width: 100%;
         padding-bottom: 0;
     }
 

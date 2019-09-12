@@ -8,6 +8,14 @@
 
 }
 
+.add-ref
+{
+    justify-content: space-around;
+    padding-bottom: 0;
+    width: 45%;
+    margin: 0 auto;
+}
+
 
 
 .add__left, .add__right
@@ -19,6 +27,11 @@
 .add__right
 {
     text-align: center;
+}
+
+.add-ref .add__right
+{
+    text-align: right;
 }
 
 .add__title
@@ -60,6 +73,21 @@
     .add
     {
         flex-direction: column;
+    }
+
+    .add-ref
+    {
+        width: 80%;
+    }
+
+    
+    .add-ref .add__title
+    {
+        text-align: center;
+    }
+
+    .add-ref .add__right {
+        text-align: center;
     }
 
     .add__left, .add__right {
