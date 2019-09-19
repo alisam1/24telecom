@@ -98,6 +98,12 @@
   height: 512px;
 }
 
+.main__slider--telemetry .slide__content
+{
+  height: 512px;
+}
+
+
 .slider__all
 {
   text-align: left;
@@ -167,6 +173,12 @@
   background-size: cover;
 }
 
+.main__slider--telemetry .slide__img
+{
+  background-image: url("../img/telemetry_bg.png");
+  background-size: cover;
+}
+
 
 .slider__info
 {
@@ -210,6 +222,12 @@
   padding-bottom: 40px;
   width: 400px;
 }
+
+.main__slider--telemetry .slider__info
+{
+  padding-bottom: 40px;
+}
+
 
 .slider__title
 {

@@ -612,6 +612,9 @@ template {
 .main__slider--drain .slide__content {
   height: 512px; }
 
+.main__slider--telemetry .slide__content {
+  height: 512px; }
+
 .slider__all {
   text-align: left;
   max-width: 565px;
@@ -658,6 +661,10 @@ template {
   background-image: url("../img/ref_bg.png");
   background-size: cover; }
 
+.main__slider--telemetry .slide__img {
+  background-image: url("../img/telemetry_bg.png");
+  background-size: cover; }
+
 .slider__info {
   font-family: "Lato-Bold";
   font-size: 30px;
@@ -685,6 +692,9 @@ template {
 .main__slider--seal .slider__info {
   padding-bottom: 40px;
   width: 400px; }
+
+.main__slider--telemetry .slider__info {
+  padding-bottom: 40px; }
 
 .slider__title {
   font-family: "Lato-Bold";
@@ -3697,6 +3707,15 @@ img.mfp-img {
   top: -20px;
   left: -20px; }
 
+.how-work__card--five::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon_five.svg");
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: -20px; }
+
 #bar {
   background-color: #f57b20;
   color: black;
@@ -3918,6 +3937,14 @@ img.mfp-img {
     content: "";
     position: absolute;
     background-image: url("../img/icon_four.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 30px; }
+  .how-work__card--five::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_five.svg");
     width: 40px;
     height: 40px;
     top: -20px;

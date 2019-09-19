@@ -107,6 +107,17 @@
     left: -20px;
 }
 
+.how-work__card--five::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_five.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: -20px;
+}
+  
 #bar
 {
     background-color:#f57b20;
@@ -423,6 +434,18 @@
     content: "";
     position: absolute;
     background-image: url("../img/icon_four.svg");
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 30px;
+}
+
+
+.how-work__card--five::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_five.svg");
     width: 40px;
     height: 40px;
     top: -20px;
