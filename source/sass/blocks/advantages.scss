@@ -8,6 +8,21 @@
     flex-wrap: wrap;
 }
 
+.advantages-agro
+{
+    background-color: #f4fbff;
+}
+
+.advantages__content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+
 .advantages__card
 {
     width: 25%;
@@ -37,9 +52,24 @@
     {
        width: 250px;
     }
+    &--help
+    {
+        width: 200px;
+    }
+    &--model
+    {
+        padding-top: 30px;
+    }
 }
 
-
+.advantages__content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    flex-wrap: nowrap;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
@@ -49,6 +79,11 @@
         margin-bottom: 40px;
     
     }
+
+    .advantages__content
+{
+    flex-wrap: wrap;
+}
 
 
   }
@@ -61,6 +96,12 @@
     {
         flex-direction: column;
     }
+
+        .advantages__content
+{
+    flex-wrap: wrap;
+}
+
 
     .advantages__card {
         width: 90%;

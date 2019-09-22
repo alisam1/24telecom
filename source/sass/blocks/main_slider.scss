@@ -98,6 +98,17 @@
   height: 512px;
 }
 
+
+.main__slider--help .slide__content
+{
+  height: 512px;
+}
+
+.main__slider--agro .slide__content
+{
+  height: 512px;
+}
+
 .slider__all
 {
   text-align: left;
@@ -167,6 +178,18 @@
   background-size: cover;
 }
 
+.main__slider--help .slide__img
+{
+  background-image: url("../img/help_bg.png");
+  background-size: cover;
+}
+
+.main__slider--agro .slide__img
+{
+  background-image: url("../img/agro_bg.png");
+  background-size: cover;
+}
+
 
 .slider__info
 {
@@ -209,6 +232,11 @@
 {
   padding-bottom: 40px;
   width: 400px;
+}
+
+.main__slider--agro .slider__info
+{
+  width: 70%;
 }
 
 .slider__title
@@ -272,6 +300,33 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  &--help
+  {
+      font-family: $font-family;
+      font-size: 14px;
+      line-height: 24px;
+     padding-top: 90px;
+  }
+  &--help-text
+  {
+      font-family: $font-family;
+      font-size: 14px;
+      line-height: 24px;
+     padding-top: 20px;
+  }
+
+  &--agro
+  {
+      font-family: $font-family;
+      font-size: 14px;
+      line-height: 24px;
+     padding-top: 60px;
+  }
+}
+
+.slider__info span
+{
+  display: block;
 }
 
 .slider__description--ref .ref-text
@@ -331,6 +386,11 @@
   color: #fff;
 }
 
+.slider__description--agro a
+{
+  text-decoration: none;
+  color: #fff;
+}
 
 .slider__dots
 {
@@ -458,9 +518,36 @@
       margin-top: 30px;
   }
 
+    .main__slider--help .slider__info {
+      padding-top: 20px;
+  }
+
+   .main__slider--help .slider__description {
+      margin-top: 0px;
+  }
+
+
+.main__slider--agro .slider__info {
+
+    width: auto;
+    padding-top: 30px;
+
+}
+
+.slider__description--agro
+{
+  margin-top: 0;
+}
+
+
     .slider__description--control
     {
       font-size: 16px;
+    }
+
+     .slider__description--help
+    {
+      margin-top: 0;
     }
 
     .main__slider--control .slide__img
@@ -672,6 +759,14 @@
   height: 500px;
 }
 
+.main__slider--help .slide_1  {
+  height: 600px;
+}
+
+.main__slider--agro .slide_1  {
+  height: 600px;
+}
+
 
 .slider__dots
 {
@@ -721,6 +816,46 @@
 .main__slider--main .slider__description
 {
   margin-top: 0;
+}
+
+.main__slider--agro .slider__info
+{
+  width: 80%;
+  margin-top: 0;
+}
+
+.main__slider--agro .slider__description
+{
+  width: 90%;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.main__slider--help .slider__info {
+
+    width: 80%;
+    margin: 0 auto;
+        margin-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.main__slider--help .slider__description {
+
+    width: 90%;
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #fff;
+    margin: 0 auto;
+        margin-top: 0px;
+    margin-top: 0px;
+    margin-top: 0px;
+    padding-top: 50px;
+
 }
 
 .slider__description--control

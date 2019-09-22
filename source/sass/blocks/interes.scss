@@ -14,6 +14,12 @@
     }
 }
 
+.interes-agro
+{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #f4fbff;
+}
 
 
 .interes__area
@@ -386,6 +392,30 @@
     width: 32%;
     padding-bottom: 65px;
     border-radius: 10px;
+}
+
+/* Agro */
+
+.need__card--agro
+{
+    width: 12%;
+}
+
+.need__img--agro
+{
+    font-family: $font-family;
+    font-size: 36px;
+    color: #f57b20;
+    text-align: left;
+}
+
+.need__text--agro
+{
+    width: auto;
+    font-family: $font-family;
+    font-size: 14px;
+    color: #48474d;
+    text-align: left;
 }
 
 

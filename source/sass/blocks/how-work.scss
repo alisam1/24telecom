@@ -44,6 +44,10 @@
         padding-top: 20px;
         padding-bottom: 60px;
     }
+    &--help
+    {
+        width: 40%;
+    }
 }
 
 
@@ -224,6 +228,7 @@
     height: 55px;
     left: -100px;
 }
+
 
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
